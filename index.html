@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PawHaven | Pet Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    🐾 FREE SHIPPING ON ORDERS OVER $49
+</div>
+
+
+<!-- HEADER -->
+<header class="header">
+
+    <div class="nav-container">
+
+        <button class="mobile-menu" id="mobileMenu">
+            ☰
+        </button>
+
+        <a href="#" class="logo">
+            🐾 PAW<span>HAVEN</span>
+        </a>
+
+        <nav id="navigation">
+
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#collections">Collections</a>
+            <a href="#story">Our Story</a>
+            <a href="#reviews">Reviews</a>
+
+        </nav>
+
+        <div class="nav-icons">
+
+            <button id="searchButton">⌕</button>
+
+            <button id="wishlistButton">
+                ♡
+                <span id="wishlistCount">0</span>
+            </button>
+
+            <button id="cartButton">
+                🛍
+                <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <p class="eyebrow">
+                FOR PETS & THEIR PEOPLE
+            </p>
+
+            <h1>
+                Little things.<br>
+                <em>Big tail wags.</em>
+            </h1>
+
+            <p class="hero-description">
+                Thoughtfully chosen essentials, playful toys and everyday
+                favorites made for the pets who make life better.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#shop" class="button dark">
+                    Shop Collection →
+                </a>
+
+                <a href="#collections" class="text-button">
+                    Explore collections
+                </a>
+
+            </div>
+
+            <div class="rating">
+
+                <span>★★★★★</span>
+
+                <strong>4.9/5</strong>
+
+                <small>
+                    from 2,000+ happy pet parents
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image-container">
+
+            <img
+                src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1000&q=85"
+                alt="Happy dogs"
+            >
+
+            <div class="floating-card">
+
+                🎁
+
+                <div>
+                    <strong>New pet, new adventure</strong>
+                    <small>Find their next favorite</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BENEFITS -->
+<section class="benefits">
+
+    <div class="benefit">
+
+        <span>🚚</span>
+
+        <div>
+            <strong>Free shipping</strong>
+            <small>Orders over $49</small>
+        </div>
+
+    </div>
+
+
+    <div class="benefit">
+
+        <span>↩</span>
+
+        <div>
+            <strong>Easy returns</strong>
+            <small>30-day returns</small>
+        </div>
+
+    </div>
+
+
+    <div class="benefit">
+
+        <span>♡</span>
+
+        <div>
+            <strong>Pet approved</strong>
+            <small>Quality products</small>
+        </div>
+
+    </div>
+
+
+    <div class="benefit">
+
+        <span>🔒</span>
+
+        <div>
+            <strong>Secure checkout</strong>
+            <small>Safe & encrypted</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SHOP -->
+<section class="shop section" id="shop">
+
+    <div class="section-title">
+
+        <div>
+
+            <p class="eyebrow">
+                SHOP OUR FAVORITES
+            </p>
+
+            <h2>
+                Made for <em>every</em> kind of pet.
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <!-- FILTER -->
+    <div class="filters">
+
+        <button class="filter active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter" data-filter="dog">
+            Dogs
+        </button>
+
+        <button class="filter" data-filter="cat">
+            Cats
+        </button>
+
+        <button class="filter" data-filter="toy">
+            Toys
+        </button>
+
+        <button class="filter" data-filter="accessories">
+            Accessories
+        </button>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+    <div class="products" id="products"></div>
+
+</section>
+
+
+<!-- PROMO -->
+<section class="promo">
+
+    <div class="promo-content">
+
+        <div>
+
+            <p class="eyebrow">
+                A LITTLE EXTRA LOVE
+            </p>
+
+            <h2>
+                Because they deserve
+                <em>the good stuff.</em>
+            </h2>
+
+            <p>
+                From cozy beds to clever toys, discover pieces
+                that bring more joy to their everyday.
+            </p>
+
+            <a href="#shop" class="button dark">
+                Shop Best Sellers →
+            </a>
+
+        </div>
+
+
+        <div class="promo-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=900&q=85"
+                alt="Cute dog"
+            >
+
+            <div class="sticker">
+                PET<br>
+                LOVER<br>
+                APPROVED ♡
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COLLECTIONS -->
+<section class="collections section" id="collections">
+
+    <div class="center-title">
+
+        <p class="eyebrow">
+            FIND THEIR FAVORITE
+        </p>
+
+        <h2>
+            Shop by <em>collection</em>
+        </h2>
+
+        <p>
+            Everything they need for more play,
+            comfort and tail wags.
+        </p>
+
+    </div>
+
+
+    <div class="collection-grid">
+
+        <div class="collection-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=800&q=80"
+                alt="Dogs"
+            >
+
+            <div>
+                <small>FOR DOGS</small>
+                <h3>Good dog energy →</h3>
+            </div>
+
+        </div>
+
+
+        <div class="collection-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=800&q=80"
+                alt="Cats"
+            >
+
+            <div>
+                <small>FOR CATS</small>
+                <h3>Cat-approved comfort →</h3>
+            </div>
+
+        </div>
+
+
+        <div class="collection-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=800&q=80"
+                alt="Pet toys"
+            >
+
+            <div>
+                <small>PLAYTIME</small>
+                <h3>Let the fun begin →</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STORY -->
+<section class="story section" id="story">
+
+    <div class="story-grid">
+
+        <div class="story-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8?auto=format&fit=crop&w=900&q=85"
+                alt="Happy pet"
+            >
+
+        </div>
+
+
+        <div class="story-text">
+
+            <p class="eyebrow">
+                OUR LITTLE STORY
+            </p>
+
+            <h2>
+                For the ones who make
+                <em>home</em> feel like home.
+            </h2>
+
+            <p>
+                PawHaven started with one simple idea:
+                pet products should be useful, beautiful
+                and genuinely enjoyable.
+            </p>
+
+            <p>
+                We search for everyday essentials and
+                playful finds that make life with your
+                furry best friend a little more special.
+            </p>
+
+            <a href="#shop" class="button outline">
+                Meet our favorites →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- REVIEWS -->
+<section class="reviews section" id="reviews">
+
+    <div class="center-title">
+
+        <p class="eyebrow">
+            HAPPY PAWS
+        </p>
+
+        <h2>
+            What pet parents <em>say</em>
+        </h2>
+
+    </div>
+
+
+    <div class="review-grid">
+
+        <div class="review">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                “The cutest pet store! The quality is even
+                better than I expected. My pup absolutely
+                loves his new toy.”
+            </p>
+
+            <strong>
+                — Sarah M.
+            </strong>
+
+            <small>
+                Verified customer
+            </small>
+
+        </div>
+
+
+        <div class="review">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                “Everything arrived beautifully packed and
+                my cat claimed the bed immediately.
+                Will definitely order again!”
+            </p>
+
+            <strong>
+                — Emily R.
+            </strong>
+
+            <small>
+                Verified customer
+            </small>
+
+        </div>
+
+
+        <div class="review">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                “Fast shipping, lovely products and such
+                a nice website. PawHaven has become my
+                go-to for pet gifts.”
+            </p>
+
+            <strong>
+                — James T.
+            </strong>
+
+            <small>
+                Verified customer
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+
+    <div>
+
+        <p class="eyebrow">
+            JOIN THE PACK
+        </p>
+
+        <h2>
+            10% off your first order.
+        </h2>
+
+        <p>
+            Get pet tips, new arrivals and exclusive offers.
+        </p>
+
+    </div>
+
+
+    <form id="newsletterForm">
+
+        <input
+            type="email"
+            placeholder="Your email address"
+            required
+        >
+
+        <button class="button dark">
+            Get 10% off →
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+
+            <div class="footer-logo">
+                🐾 PAWHAVEN
+            </div>
+
+            <p>
+                Everyday essentials for happier pets
+                and happier homes.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>SHOP</h4>
+
+            <a href="#shop">Dogs</a>
+            <a href="#shop">Cats</a>
+            <a href="#shop">Toys</a>
+            <a href="#shop">Accessories</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>HELP</h4>
+
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>ABOUT</h4>
+
+            <a href="#story">Our Story</a>
+            <a href="#">Journal</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 PawHaven. All rights reserved.
+    </div>
+
+</footer>
+
+
+<!-- CART -->
+<div class="overlay" id="overlay"></div>
+
+<div class="drawer" id="cartDrawer">
+
+    <div class="drawer-header">
+
+        <h2>
+            Your Bag
+            <span id="drawerCount">0</span>
+        </h2>
+
+        <button id="closeCart">
+            ×
+        </button>
+
+    </div>
+
+
+    <div class="cart-items" id="cartItems"></div>
+
+
+    <div class="cart-bottom">
+
+        <div class="subtotal">
+
+            <span>
+                Subtotal
+            </span>
+
+            <strong id="subtotal">
+                $0.00
+            </strong>
+
+        </div>
+
+        <small>
+            Shipping & taxes calculated at checkout.
+        </small>
+
+        <button class="button dark checkout">
+            Checkout →
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- SEARCH -->
+<div class="search-modal" id="searchModal">
+
+    <div class="search-box">
+
+        <button id="closeSearch">
+            ×
+        </button>
+
+        <p class="eyebrow">
+            SEARCH PAWHAVEN
+        </p>
+
+        <h2>
+            Find something they'll <em>love.</em>
+        </h2>
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Search toys, beds, collars..."
+        >
+
+        <div id="searchResults"></div>
+
+    </div>
+
+</div>
+
+
+<div class="toast" id="toast">
+    Added to your bag ♡
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
